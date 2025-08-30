@@ -1,5 +1,5 @@
 
-# Build Your First MCP Server: Leave Management
+# Agentic Demo - MCP Server: Leave Management
 
 This project demonstrates how to build a **Model Context Protocol (MCP) server** for managing leave requests.  
 The server interacts with a **mock leave database** and **mock employees database** and responds to queries from an MCP client that is Claude Desktop install locally on system.
