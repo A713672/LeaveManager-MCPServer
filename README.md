@@ -37,46 +37,52 @@ Follow these steps to set up and run the MCP server:
 1. **Install Claude Desktop**  
    Download and install [Claude Desktop](https://claude.ai).  
 
-2. **Install `uv`**  
+2. **Install MCP**  
+   ```bash
+   pip install mcp
+   ```
+   
+3. **Install `uv`**  
    ```bash
    pip install uv
    ```
 
-3. **Initialize a New MCP Project**  
+4. **Initialize a New MCP Project**  
    ```bash
    uv init my-first-mcp-server
    ```
 
-4. **Add the MCP CLI**  
+5. **Add the MCP CLI**  
    ```bash
    uv add "mcp[cli]"
    ```
 
-5. **Fix Potential Type Errors (Optional)**  
+6. **Fix Potential Type Errors (Optional)**  
    Some users may see type errors. Upgrade `typer` if needed:  
    ```bash
    pip install --upgrade typer
    ```
 
-6. **Write the Server Code**  
+7. **Write the Server Code**  
    Implement your leave management server in `main.py`.  
 
-7. **Install the Server in Claude Desktop**  
+8. **Install the Server in Claude Desktop**  
    ```bash
    uv run mcp install main.py
    ```
 
-8. **Write the Server Code**  
+9. **Write the Server Code**  
    Implement your leave management server in `employee.py`.  
 
-9. **Install the Server in Claude Desktop**  
+10. **Install the Server in Claude Desktop**  
    ```bash
    uv run mcp install employee.py
+   ```
 
-10. **Restart Claude Desktop**  
+11. **Restart Claude Desktop**  
    - Kill any running Claude instance from **Task Manager**.  
    - Restart Claude Desktop.  
 
-11. **Verify Installation**  
+12. **Verify Installation**  
    You should now see **tools from this server** in Claude Desktop.  
    (Enable Developer Mode first) and the visit -> settings ->Developer
